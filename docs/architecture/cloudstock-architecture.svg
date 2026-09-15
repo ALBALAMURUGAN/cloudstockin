@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <rect width="1400" height="820" fill="#faf8f5"/>
+  <text x="70" y="70" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#2d211b">CloudStock — Cloud Architecture</text>
+  <text x="70" y="108" font-family="Arial,sans-serif" font-size="16" fill="#75675f">A serverless-ready React + Vercel + Supabase architecture</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="175" rx="22" width="270" height="150" fill="#fff" stroke="#d8c8bb" stroke-width="2"/>
+    <text x="205" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Client</text>
+    <text x="205" y="255" text-anchor="middle" font-size="16" fill="#5f5149">React 19 + TypeScript</text>
+    <text x="205" y="282" text-anchor="middle" font-size="16" fill="#5f5149">Tailwind + Framer Motion</text>
+    <text x="205" y="309" text-anchor="middle" font-size="16" fill="#5f5149">React Router</text>
+
+    <rect x="565" y="155" rx="22" width="270" height="190" fill="#fff" stroke="#d8c8bb" stroke-width="2"/>
+    <text x="700" y="200" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Vercel</text>
+    <text x="700" y="235" text-anchor="middle" font-size="16" fill="#5f5149">Static frontend hosting</text>
+    <text x="700" y="263" text-anchor="middle" font-size="16" fill="#5f5149">Vite production build</text>
+    <text x="700" y="291" text-anchor="middle" font-size="16" fill="#5f5149">Serverless API functions</text>
+    <text x="700" y="319" text-anchor="middle" font-size="16" fill="#5f5149">SPA route rewrites</text>
+
+    <rect x="1060" y="175" rx="22" width="270" height="150" fill="#fff" stroke="#d8c8bb" stroke-width="2"/>
+    <text x="1195" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Supabase</text>
+    <text x="1195" y="255" text-anchor="middle" font-size="16" fill="#5f5149">PostgreSQL database</text>
+    <text x="1195" y="282" text-anchor="middle" font-size="16" fill="#5f5149">Authentication</text>
+    <text x="1195" y="309" text-anchor="middle" font-size="16" fill="#5f5149">Storage / RLS-ready</text>
+
+    <rect x="300" y="505" rx="22" width="800" height="180" fill="#fff" stroke="#d8c8bb" stroke-width="2"/>
+    <text x="700" y="550" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Domain API Layer</text>
+    <text x="700" y="584" text-anchor="middle" font-size="16" fill="#5f5149">Products · Inventory · Warehouses · Suppliers · Customers</text>
+    <text x="700" y="612" text-anchor="middle" font-size="16" fill="#5f5149">Purchase Orders · Sales Orders · Analytics · Notifications · User Roles</text>
+    <text x="700" y="640" text-anchor="middle" font-size="16" fill="#5f5149">Secure server-side Supabase access through environment variables</text>
+
+    <path d="M340 250 H565" stroke="#7a5a45" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M835 250 H1060" stroke="#7a5a45" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M700 345 V505" stroke="#7a5a45" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M1060 575 H950" stroke="#7a5a45" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#7a5a45"/></marker>
+  </defs>
+</svg>

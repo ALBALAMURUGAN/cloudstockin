@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f7f3ef"/>
+  <rect width="250" height="900" fill="#2d211b"/>
+  <text x="32" y="62" font-family="Arial" font-size="27" font-weight="700" fill="#fff">CloudStock</text>
+  <text x="32" y="92" font-family="Arial" font-size="12" fill="#cdbeb3">INVENTORY CLOUD</text>
+  <g font-family="Arial" font-size="15" fill="#e8ded7">
+    <text x="35" y="155">Dashboard</text><text x="35" y="205">Products</text><text x="35" y="255">Inventory</text><text x="35" y="305">Warehouses</text><text x="35" y="355">Suppliers</text><text x="35" y="405">Purchase Orders</text><text x="35" y="455">Sales Orders</text><text x="35" y="505">Customers</text><text x="35" y="555">Analytics</text>
+  </g>
+  <text x="285" y="60" font-family="Arial" font-size="30" font-weight="700" fill="#2d211b">Good morning, Admin</text>
+  <text x="285" y="88" font-family="Arial" font-size="14" fill="#75675f">Here’s your inventory and supply chain overview.</text>
+  <g font-family="Arial">
+    <rect x="285" y="125" rx="16" width="250" height="120" fill="#fff" stroke="#e3d9d1"/><text x="305" y="160" font-size="13" fill="#75675f">TOTAL PRODUCTS</text><text x="305" y="205" font-size="32" font-weight="700" fill="#2d211b">1,248</text>
+    <rect x="555" y="125" rx="16" width="250" height="120" fill="#fff" stroke="#e3d9d1"/><text x="575" y="160" font-size="13" fill="#75675f">INVENTORY VALUE</text><text x="575" y="205" font-size="32" font-weight="700" fill="#2d211b">₹48.6L</text>
+    <rect x="825" y="125" rx="16" width="250" height="120" fill="#fff" stroke="#e3d9d1"/><text x="845" y="160" font-size="13" fill="#75675f">LOW STOCK</text><text x="845" y="205" font-size="32" font-weight="700" fill="#2d211b">37</text>
+    <rect x="1095" y="125" rx="16" width="250" height="120" fill="#fff" stroke="#e3d9d1"/><text x="1115" y="160" font-size="13" fill="#75675f">PENDING ORDERS</text><text x="1115" y="205" font-size="32" font-weight="700" fill="#2d211b">84</text>
+    <rect x="285" y="275" rx="18" width="680" height="330" fill="#fff" stroke="#e3d9d1"/><text x="315" y="315" font-size="19" font-weight="700" fill="#2d211b">Sales performance</text><text x="315" y="340" font-size="12" fill="#75675f">Last 6 months</text>
+    <polyline points="320,540 400,500 480,515 560,430 640,455 720,380 800,405 880,345 930,365" fill="none" stroke="#7a5a45" stroke-width="5"/>
+    <line x1="320" y1="555" x2="930" y2="555" stroke="#e7ddd6"/><line x1="320" y1="380" x2="930" y2="380" stroke="#eee7e2"/>
+    <rect x="995" y="275" rx="18" width="350" height="330" fill="#fff" stroke="#e3d9d1"/><text x="1025" y="315" font-size="19" font-weight="700" fill="#2d211b">Low stock alerts</text><text x="1025" y="340" font-size="12" fill="#75675f">Items requiring attention</text>
+    <g font-size="13" fill="#4e4038"><text x="1025" y="385">Wireless Scanner</text><text x="1270" y="385">12 left</text><text x="1025" y="440">Thermal Labels</text><text x="1270" y="440">18 left</text><text x="1025" y="495">Barcode Printer</text><text x="1270" y="495">7 left</text><text x="1025" y="550">USB Hub</text><text x="1270" y="550">9 left</text></g>
+    <rect x="285" y="635" rx="18" width="1060" height="190" fill="#fff" stroke="#e3d9d1"/><text x="315" y="675" font-size="19" font-weight="700" fill="#2d211b">Recent transactions</text>
+    <g font-size="13" fill="#75675f"><text x="315" y="720">PO-2048</text><text x="500" y="720">Acme Supplies</text><text x="760" y="720">Purchase</text><text x="1060" y="720">₹82,400</text><text x="315" y="765">SO-1042</text><text x="500" y="765">Nova Retail</text><text x="760" y="765">Sale</text><text x="1060" y="765">₹54,800</text></g>
+  </g>
+</svg>
