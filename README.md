@@ -57,10 +57,10 @@ PostgreSQL + Authentication + Storage
 ```
 
 ## Project structure
-
 ```text
+
 CloudStock/
-├── api/                         # Serverless backend endpoints
+├── api/                         # Application/API endpoints
 │   ├── analytics.js
 │   ├── customers.js
 │   ├── inventory.js
@@ -85,12 +85,11 @@ CloudStock/
 │   └── main.tsx                 # React entry point
 ├── docs/
 │   ├── architecture/            # Architecture diagrams
-│   └── screenshots/              # Project visuals
+│   └── screenshots/             # Project visuals
 ├── .env.example                 # Environment variable template
 ├── package.json                 # Scripts and dependencies
-├── vite.config.ts               # Vite configuration
-└── vercel.json                  # Vercel SPA routing
-```
+├── package-lock.json            # Dependency lock file
+└── vite.config.ts               # Vite configuration
 
 ## Local development
 
@@ -134,28 +133,97 @@ npm run build
 npm run preview
 ```
 
-## Deploy to Vercel
 
-Vercel is the recommended deployment target for this repository because the project contains both a Vite frontend and `/api` serverless functions.
+## Deploy to Render
 
-1. Push this folder to a GitHub repository.
-2. Open Vercel and choose **Add New → Project**.
-3. Import the CloudStock GitHub repository.
-4. Keep the detected framework as **Vite**.
-5. Add the environment variables from `.env.local` in **Project Settings → Environment Variables**.
-6. Deploy.
-7. Open the generated Vercel URL and test `/login`, `/register`, dashboard pages and `/api/*` requests.
-8. Put the live URL in the GitHub repository's **About → Website** field and README.
+CloudStock is deployed on **Render** as a Static Site using the Vite production build.
 
-### Important security note
+### Render deployment configuration
 
-The browser should receive only the Supabase URL and publishable/anonymous key. The Supabase **service-role key must remain server-side** in Vercel environment variables. If a service-role key was previously committed to a public repository, rotate/revoke it in Supabase before publishing the repository.
+| Setting | Value |
+|---|---|
+| Service Type | Static Site |
+| Repository | `ALBALAMURUGAN/cloudstockin` |
+| Branch | `main` |
+| Root Directory | `/` |
+| Build Command | `npm ci && npm run build` |
+| Publish Directory | `dist` |
 
+### Deployment steps
+
+1. Push the CloudStock project to the GitHub repository.
+2. Open Render and choose **New → Static Site**.
+3. Connect the GitHub repository:
+   `ALBALAMURUGAN/cloudstockin`
+4. Select the `main` branch.
+5. Leave **Root Directory** empty.
+6. Set the **Build Command**:
+
+
+npm ci && npm run build
+Set the Publish Directory:
+```bash
+dist
+```
+Add the required environment variables.
+Deploy the Static Site.
+Open the generated Render URL and test the application.
+Environment variables
+
+Configure these variables in Render → Environment Variables:
+```bash
+
+VITE_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY
+```
+
+The Supabase service-role key must never be exposed to the browser or committed to GitHub.
+
+Live deployment
+```bash
+
+🌐 CloudStock — Live Demo
+```
+Deployment architecture
+```bash
+GitHub Repository
+       │
+       ▼
+     Render
+       │
+       ▼
+CloudStock Web App
+       │
+       ▼
+    Supabase
+   ┌───┼───────────┐
+   ▼   ▼           ▼
+PostgreSQL   Authentication   Storage
+```
 ## Render deployment
 
-Render can host the frontend as a static site, but this repository also relies on the `/api` serverless endpoints. Therefore, **Vercel is the simpler single-deployment choice**. If Render is required, the API should be moved into a separate Node/Express service and the frontend configured to call that API URL.
+CloudStock is deployed on **Render** as a Static Site using the Vite production build.
+
+### Render deployment configuration
+
+| Setting | Value |
+|---|---|
+| Service Type | Static Site |
+| Repository | `ALBALAMURUGAN/cloudstockin` |
+| Branch | `main` |
+| Root Directory | `/` |
+| Build Command | `npm ci && npm run build` |
+| Publish Directory | `dist` |
+
+### Live deployment
+
+🌐 **[CloudStock — Live Demo](https://cloudstockin.onrender.com)**
+
+The frontend is hosted on Render and connects to Supabase cloud services for authentication and database operations.
 
 ## API surface
+
+The project contains an API layer for the application's business operations:
 
 | Endpoint | Purpose |
 |---|---|
@@ -177,12 +245,14 @@ Render can host the frontend as a static site, but this repository also relies o
 - Cloud-hosted web application
 - Managed PostgreSQL database
 - Cloud authentication
-- Serverless backend/API execution
+- API-driven application architecture
 - Environment-based configuration and secret management
-- API-driven architecture
 - Scalable stateless request handling
-- Cloud deployment and continuous delivery through GitHub integration
+- Cloud deployment through GitHub integration
+- Continuous deployment with Render
 - Separation of client-side and server-side credentials
+- Managed cloud services
+- Cloud-based data management
 
 ## Future enhancements
 
@@ -195,10 +265,21 @@ Render can host the frontend as a static site, but this repository also relies o
 - Dockerized local development
 - Automated tests and CI quality gates
 - Advanced demand forecasting
+- Dedicated Node.js backend service on Render
+- Background job processing
+- Production monitoring and logging
 
 ## Portfolio
 
 **Project:** CloudStock — Smart Inventory & Supply Chain Management System  
 **Category:** Cloud Computing / Full Stack Development  
-**Architecture:** React SPA + Serverless API + Managed PostgreSQL  
-**Deployment:** Vercel + Supabase
+**Architecture:** React SPA + API Layer + Managed PostgreSQL  
+**Deployment:** Render + Supabase
+
+### Live Project
+
+🌐 **[CloudStock — Live Demo](https://cloudstockin.onrender.com)**
+
+### Source Code
+
+💻 **[GitHub Repository](https://github.com/ALBALAMURUGAN/cloudstockin)**
