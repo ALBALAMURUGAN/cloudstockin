@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
   <rect width="1400" height="820" fill="#faf8f5"/>
   <text x="70" y="70" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#2d211b">CloudStock — Cloud Architecture</text>
-  <text x="70" y="108" font-family="Arial,sans-serif" font-size="16" fill="#75675f">A serverless-ready React + Vercel + Supabase architecture</text>
+  <text x="70" y="108" font-family="Arial,sans-serif" font-size="16" fill="#75675f">A serverless-ready React + Render + Supabase architecture</text>
   <g font-family="Arial,sans-serif">
     <rect x="70" y="175" rx="22" width="270" height="150" fill="#fff" stroke="#d8c8bb" stroke-width="2"/>
     <text x="205" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Client</text>
@@ -10,7 +10,7 @@
     <text x="205" y="309" text-anchor="middle" font-size="16" fill="#5f5149">React Router</text>
 
     <rect x="565" y="155" rx="22" width="270" height="190" fill="#fff" stroke="#d8c8bb" stroke-width="2"/>
-    <text x="700" y="200" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Vercel</text>
+    <text x="700" y="200" text-anchor="middle" font-size="22" font-weight="700" fill="#2d211b">Render</text>
     <text x="700" y="235" text-anchor="middle" font-size="16" fill="#5f5149">Static frontend hosting</text>
     <text x="700" y="263" text-anchor="middle" font-size="16" fill="#5f5149">Vite production build</text>
     <text x="700" y="291" text-anchor="middle" font-size="16" fill="#5f5149">Serverless API functions</text>
